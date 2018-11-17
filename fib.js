@@ -1,20 +1,14 @@
-//iterative approach
+// var k = [[1,2],[3,4]];
+// for(var i =0 ; i<k.length; i++){
+// 	for(j = 0; j<k[i].length; j++)
+// 		//console.log(k[i][j]);
+// }
 
-function fib1(n){
-	var fib = [0,1];
-	if(n == 0){
-		return fib[0];
-	}
-	if(n==1){
-		return fib;
-
-	}
-	if(n>=2){
-		for(var j=1; j<n-1; j++){
-			fib.push(fib[j] + fib[j-1]);
-
+var kk = [[[1,2,3],[4,5,6],[7,8,9]]];
+for(var i=0; i<kk.length; i++){
+	for(j=0; j<kk[i].length;j++){
+		for(k=0; k<kk[i][j].length;k++){
+			console.log(kk[i][j][k]);
 		}
 	}
-	return fib;
 }
-console.log(fib1(10));
